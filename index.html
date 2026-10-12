@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informe · Report · Отчёт — Duma IX, Ryazan 2026</title>
+<meta name="description" content="Informe de observación electoral internacional · International election observation report · Отчёт о международном наблюдении за выборами. Español · English · Русский.">
+<meta name="author" content="Juan Rodriguez Mercant">
+<link rel="canonical" href="https://jmercant.github.io/informe-duma-2026/">
+<link rel="alternate" hreflang="es" href="https://jmercant.github.io/informe-duma-2026/es/">
+<link rel="alternate" hreflang="en" href="https://jmercant.github.io/informe-duma-2026/en/">
+<link rel="alternate" hreflang="ru" href="https://jmercant.github.io/informe-duma-2026/ru/">
+<link rel="alternate" hreflang="x-default" href="https://jmercant.github.io/informe-duma-2026/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Informe · Report · Отчёт — Duma IX, Ryazan 2026">
+<meta property="og:url" content="https://jmercant.github.io/informe-duma-2026/">
+<meta property="og:image" content="https://jmercant.github.io/informe-duma-2026/images/image7.png">
+<style>
+:root{--navy:#1f3864;--ink:#222;--muted:#555;--rule:#c9d1de;--tint:#f3f6fb}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.6 Arial,"Helvetica Neue",Helvetica,sans-serif;color:var(--ink);background:#fff}
+.wrap{max-width:900px;margin:0 auto;padding:40px 20px 60px;text-align:center}
+.logo{width:min(260px,60%);height:auto}
+h1{font-size:1.35rem;color:var(--navy);margin:.8em 0 .2em}
+.by{color:var(--muted);margin:0 0 2em}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:left}
+.card{display:flex;flex-direction:column;gap:.5em;padding:20px;border:1px solid var(--rule);border-radius:10px;background:var(--tint);text-decoration:none;color:var(--ink)}
+.card:hover,.card:focus-visible{border-color:var(--navy);box-shadow:0 2px 10px rgba(31,56,100,.15)}
+.card:focus-visible{outline:3px solid #f2a900;outline-offset:2px}
+.card.rec{border-color:var(--navy);border-width:2px}
+.lg{font-size:1.25rem;font-weight:700;color:var(--navy)}
+.tt{font-weight:700;font-size:.95rem}
+.ds{font-size:.88rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<main class="wrap">
+<img class="logo" src="images/image7.png" alt="" width="1000" height="709">
+<h1>Elecciones de la Duma Estatal · State Duma Elections · Выборы в Государственную Думу</h1>
+<p class="by">Juan Rodriguez Mercant · 18–20.IX.2026 · Ryazan</p>
+<div class="cards">
+<a class="card" href="es/" hreflang="es" lang="es" data-lang="es"><span class="lg">Español</span><span class="tt">Informe sobre mis hallazgos como observador de las elecciones de la Duma Estatal de la Federación Rusa de la IX Legislatura</span><span class="ds">Informe técnico de observación electoral internacional: el sistema electoral ruso, la misión en el Óblast de Ryazan (18–20 de septiembre de 2026) y un análisis comparado con el sistema uruguayo.</span></a>
+<a class="card" href="en/" hreflang="en" lang="en" data-lang="en"><span class="lg">English</span><span class="tt">Report on My Findings as an Observer of the State Duma Elections of the Russian Federation, Ninth Convocation</span><span class="ds">Technical report on international election observation: the Russian electoral system, the mission in Ryazan Oblast (September 18–20, 2026), and a comparative analysis with the Uruguayan system.</span></a>
+<a class="card" href="ru/" hreflang="ru" lang="ru" data-lang="ru"><span class="lg">Русский</span><span class="tt">Отчёт о результатах моего наблюдения на выборах депутатов Государственной Думы Федерального Собрания Российской Федерации IX созыва</span><span class="ds">Технический отчёт о международном наблюдении за выборами: избирательная система России, миссия в Рязанской области (18–20 сентября 2026 г.) и сравнительный анализ с избирательной системой Уругвая.</span></a>
+</div>
+<noscript><p>Seleccione un idioma / Select a language / Выберите язык.</p></noscript>
+</main>
+<script>
+(function(){
+  var saved=null, valid={es:1,en:1,ru:1};
+  try{ saved=localStorage.getItem('informe-lang'); }catch(e){}
+  var q=location.search.indexOf('elegir')>-1||location.search.indexOf('choose')>-1;
+  if(saved && valid[saved] && !q){ location.replace(saved+'/'+location.hash); return; }
+  var langs=(navigator.languages||[navigator.language||'es']).map(function(l){return String(l).slice(0,2).toLowerCase();});
+  var pick=null; for(var i=0;i<langs.length;i++){ if(valid[langs[i]]){ pick=langs[i]; break; } }
+  if(pick){ var c=document.querySelector('.card[data-lang="'+pick+'"]'); if(c) c.className+=' rec'; }
+  [].forEach.call(document.querySelectorAll('.card'),function(a){ a.addEventListener('click',function(){ try{ localStorage.setItem('informe-lang',a.getAttribute('data-lang')); }catch(e){} }); });
+})();
+</script>
+</body>
+</html>

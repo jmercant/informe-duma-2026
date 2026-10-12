@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jmercant.github.io/informe-duma-2026/sitemap.xml
